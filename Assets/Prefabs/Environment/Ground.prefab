@@ -93,7 +93,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3783623063888434917}
-  - component: {fileID: 3783623063888434916}
+  - component: {fileID: 3783623062962149601}
+  - component: {fileID: 4300871286892189925}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -110,14 +111,45 @@ Transform:
   m_GameObject: {fileID: 3783623063888434918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3783623063841678367}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &3783623063888434916
+--- !u!60 &3783623062962149601
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3783623063888434918}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.011143029, y: 4.409815}
+      - {x: -7.048594, y: 4.3176165}
+      - {x: -7.1546183, y: -4.218503}
+      - {x: 0.008996807, y: -4.1922803}
+      - {x: 7.048066, y: -4.175048}
+      - {x: 7.1342025, y: 4.3200283}
+--- !u!68 &4300871286892189925
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,13 +165,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.017343774, y: 4.3836493}
-  - {x: 7.1085753, y: 0.16224858}
-  - {x: 7.1125407, y: -0.011579394}
-  - {x: 0.011554301, y: -4.1911755}
-  - {x: -7.1119313, y: -0.059749313}
-  - {x: -7.1067924, y: 0.1441302}
-  - {x: 0.0108499825, y: 4.3820224}
+  - {x: 7.121736, y: -0.02736152}
+  - {x: 0.020345112, y: -4.1695023}
+  - {x: -7.101989, y: -0.05739551}
+  - {x: -7.091212, y: 0.14576359}
+  - {x: 0.035261482, y: 4.4184775}
+  - {x: 7.1046143, y: 0.16701022}
+  - {x: 7.0901346, y: -0.0343868}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

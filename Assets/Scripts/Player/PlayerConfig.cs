@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Player Config", menuName ="Config/Player Config",order = 51)]
+[CreateAssetMenu(fileName = "Player Config", menuName = "Config/Player Config", order = 51)]
 
 public class PlayerConfig : ScriptableObject
 {
