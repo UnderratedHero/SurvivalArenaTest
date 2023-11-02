@@ -7,4 +7,8 @@ using UnityEngine;
 public class PlayerConfig : ScriptableObject
 {
     [field: SerializeField] public float MoveSpeed { get; private set; } = 0f;
+
+    [field: SerializeField] public float MaxHealthPoints { get; private set; } = 0f;
+
+    [field: SerializeField] public float MinHealthPoints { get; private set; } = 0f;
 }
