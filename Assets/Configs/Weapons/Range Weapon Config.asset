@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef51872dc1732c43b710e907fedb333, type: 3}
-  m_Name: MeleeWeaponConfig
+  m_Script: {fileID: 11500000, guid: 3cf6667c35dd7d3418592e555fe394c2, type: 3}
+  m_Name: Range Weapon Config
   m_EditorClassIdentifier: 
-  <WeaponDamage>k__BackingField: 5
-  <AttackCoolDown>k__BackingField: 2
-  <AttackSpeed>k__BackingField: 1.5
+  <WeaponDamage>k__BackingField: 1
+  <BulletLifeTime>k__BackingField: 0.5
+  <BulletSpeed>k__BackingField: 10

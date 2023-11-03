@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fef51872dc1732c43b710e907fedb333, type: 3}
-  m_Name: DistanceWeaponConfig
+  m_Name: Melee Weapon Config
   m_EditorClassIdentifier: 
-  <WeaponDamage>k__BackingField: 3
-  <AttackCoolDown>k__BackingField: 1
-  <AttackSpeed>k__BackingField: 1
+  <WeaponDamage>k__BackingField: 1
+  <AttackCoolDown>k__BackingField: 0.5
