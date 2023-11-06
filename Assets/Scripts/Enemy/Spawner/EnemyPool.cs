@@ -1,18 +1,18 @@
 using UnityEngine;
 
-public class EnemiePool : MonoBehaviour
+public class EnemyPool : MonoBehaviour
 {
     [SerializeField] private int _poolSise = 16;
     [SerializeField] private bool _isAutoExpand;
-    [SerializeField] private Enemie _prefab;
-    private ObjectPool<Enemie> _enemies;
+    [SerializeField] private Enemy _prefab;
+    private ObjectPool<Enemy> _enemies;
 
     private void Start()
     {
-        _enemies = new ObjectPool<Enemie>(_prefab, _isAutoExpand, transform, _poolSise);
+        _enemies = new ObjectPool<Enemy>(_prefab, _isAutoExpand, transform, _poolSise);
     }
     
-    public Enemie CreateEnemie()
+    public Enemy CreateEnemie()
     {
         var enemie = _enemies.GetFreeElement();
         return enemie;
