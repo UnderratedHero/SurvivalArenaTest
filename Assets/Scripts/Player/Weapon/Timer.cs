@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class MeleeAttackTimer : MonoBehaviour
+public class Timer : MonoBehaviour
 {
     private float _timeRemaining;
 

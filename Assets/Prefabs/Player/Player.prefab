@@ -505,6 +505,7 @@ GameObject:
   - component: {fileID: 243390666}
   - component: {fileID: 243390665}
   - component: {fileID: 243390670}
+  - component: {fileID: 1846226540}
   m_Layer: 7
   m_Name: Weapons
   m_TagString: Untagged
@@ -557,12 +558,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _meleeWeaponCollider: {fileID: 1919330879}
-  _bullet: {fileID: 8294493709481580748, guid: f72676b4b3a416447b21f5a847d93222, type: 3}
   _meleeConfig: {fileID: 11400000, guid: 55b31cdd87e49f94aba7258034c2d014, type: 2}
   _rangeConfig: {fileID: 11400000, guid: de5aea3e984a0564e8fd34365651151d, type: 2}
   _timer: {fileID: 243390670}
-  _scanner: {fileID: 787910088078533494}
-  _spawnPosition: {fileID: 6185549361680192836}
+  _bulletPool: {fileID: 1846226540}
 --- !u!114 &243390667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,3 +612,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb8a4fd188cdf5049983cdd5d05824a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1846226540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120565457148158125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e91e637b4c0e33a47bb6cb06407aa21b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _poolSize: 10
+  _isAutoExpand: 1
+  _prefab: {fileID: 7087588361763783700, guid: f72676b4b3a416447b21f5a847d93222, type: 3}
