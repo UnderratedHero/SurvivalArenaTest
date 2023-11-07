@@ -1,11 +1,11 @@
 using System;
 using UnityEngine;
 
-public class EnemieScanner : MonoBehaviour
+public class EnemyScanner : MonoBehaviour
 {
     [SerializeField] private Vector2 _scanArea;
     [SerializeField] private int _maxScanEnemies;
-    [SerializeField] private LayerMask _enemieLayer;
+    [SerializeField] private LayerMask _enemyLayer;
 
     private Collider2D[] _enemies;
 
@@ -21,7 +21,7 @@ public class EnemieScanner : MonoBehaviour
         Gizmos.DrawWireCube(Vector2.zero, _scanArea);
     }
 
-    public bool TryGetEnemie()
+    public bool TryGetEnemy()
     {
         Scan();
         if(_enemies == null)
@@ -34,6 +34,6 @@ public class EnemieScanner : MonoBehaviour
     private void Scan()
     {
         Array.Clear(_enemies, 0, _maxScanEnemies);
-        Physics2D.OverlapBoxNonAlloc(transform.position, _scanArea, transform.rotation.z, _enemies, _enemieLayer);
+        Physics2D.OverlapBoxNonAlloc(transform.position, _scanArea, transform.rotation.z, _enemies, _enemyLayer);
     }
 }
