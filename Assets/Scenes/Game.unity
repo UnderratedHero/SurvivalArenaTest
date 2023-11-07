@@ -426,34 +426,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 40081865895690368, guid: c88df60489af09c4380d6c50b949b932, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1879169679645552512, guid: c88df60489af09c4380d6c50b949b932, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2595638559609475638, guid: c88df60489af09c4380d6c50b949b932, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3067571178399455530, guid: c88df60489af09c4380d6c50b949b932, type: 3}
       propertyPath: _camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 3134685873680288707, guid: c88df60489af09c4380d6c50b949b932, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3134685873680288707, guid: c88df60489af09c4380d6c50b949b932, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3134685873680288707, guid: c88df60489af09c4380d6c50b949b932, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4125106303677542350, guid: c88df60489af09c4380d6c50b949b932, type: 3}
       propertyPath: m_Name
       value: Player
@@ -515,42 +491,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 742176864214213421, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _layerNumber
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4286639248393493818, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _poolSise
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4286639248393493818, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _isAutoExpand
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4303115272168856022, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _poolSise
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4303115272168856022, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _isAutoExpand
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4316649663687148811, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _layerNumber
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4513789282371702013, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _layerNumber
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4721366173514553651, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _poolSise
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4721366173514553651, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _isAutoExpand
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5479547464513278256, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -595,69 +535,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5564967243690597449, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _layerNumber
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5702641765689974737, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _poolSise
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5702641765689974737, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _isAutoExpand
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6112156011458229439, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
       propertyPath: m_Name
       value: EnemySpawner
-      objectReference: {fileID: 0}
-    - target: {fileID: 6355726019456629049, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _layerNumber
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239732062807409139, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _poolSise
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239732062807409139, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _isAutoExpand
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281055022886118820, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _poolSise
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281055022886118820, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _isAutoExpand
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7326901831106582217, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _layerNumber
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7469441642088529841, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _layerNumber
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7650336420716786908, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _poolSise
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7650336420716786908, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _isAutoExpand
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7770487252392483088, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _layerNumber
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8315567290304779191, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _poolSise
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8315567290304779191, guid: 0f9efaecbeb0220489d0292473183096, type: 3}
-      propertyPath: _isAutoExpand
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f9efaecbeb0220489d0292473183096, type: 3}

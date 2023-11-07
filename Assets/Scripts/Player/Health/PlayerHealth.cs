@@ -22,7 +22,6 @@ public class PlayerHealth : MonoBehaviour, IHealth
         {
             Current = _config.MinHealthPoints;
         }
-
         OnDecrease?.Invoke(_config.MinHealthPoints);
     }
 

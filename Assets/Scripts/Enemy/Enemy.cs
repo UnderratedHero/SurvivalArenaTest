@@ -5,6 +5,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int _rangeWeaponLayerID;
     [SerializeField] private int _meleeWeaponLayerID;
     [SerializeField] private EnemyHealth _health;
+    [SerializeField] private EnemyConfig _config;
+
+    public EnemyConfig Config { get { return _config; } }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
