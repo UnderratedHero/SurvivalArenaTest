@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255485541320663566}
   - component: {fileID: 723573127512064472}
+  - component: {fileID: 1893917070261116424}
   - component: {fileID: -978589094423647807}
   - component: {fileID: -4019224570006562408}
   - component: {fileID: 4711259434437757789}
@@ -133,6 +134,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee011d39dd42f7345a5ee76e6ee087c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rangeWeaponLayerID: 6
+  _meleeWeaponLayerID: 9
+  _health: {fileID: 1893917070261116424}
+--- !u!114 &1893917070261116424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3744784379284172208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998a3a1e61c7bbf4db43a95bcc986234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _config: {fileID: 11400000, guid: 7018ca3713398a14fb9efea64b70a940, type: 2}
 --- !u!114 &-978589094423647807
 MonoBehaviour:
   m_ObjectHideFlags: 0

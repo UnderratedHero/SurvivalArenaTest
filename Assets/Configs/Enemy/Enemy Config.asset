@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 002bfc6ca0f859e49a059472f9c80abb, type: 3}
   m_Name: Enemy Config
   m_EditorClassIdentifier: 
+  <MaxHealthPoints>k__BackingField: 5
+  <MinHealthPoints>k__BackingField: 0
   <SpawnTime>k__BackingField: 10
   <MoveSpeed>k__BackingField: 1

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef51872dc1732c43b710e907fedb333, type: 3}
   m_Name: Melee Weapon Config
   m_EditorClassIdentifier: 
-  <WeaponDamage>k__BackingField: 1
+  <WeaponDamage>k__BackingField: 2
   <AttackCoolDown>k__BackingField: 0.5

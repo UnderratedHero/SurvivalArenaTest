@@ -6,6 +6,7 @@ public class SpawnPoint : MonoBehaviour
     [SerializeField] private EnemyPool _enemies;
     [SerializeField] private EnemyConfig _config;
     [SerializeField] private int _layerNumber;
+    private GameObject _currentEnemy;
 
     private void OnEnable()
     {
@@ -36,8 +37,22 @@ public class SpawnPoint : MonoBehaviour
         enabled = true;   
     }
 
+    private void Update()
+    {
+        if(_currentEnemy == null || !_currentEnemy.TryGetComponent<EnemyHealth>(out var enemyHealth))
+        {
+            return;
+        }
+        if(enemyHealth.IsDead)
+        {
+            _currentEnemy.transform.position = transform.position;
+            _currentEnemy.SetActive(false);
+            SpawnEnemy();  
+        }
+    }
+
     private void SpawnEnemy()
     {
-        _enemies.CreateEnemie();
+        _currentEnemy = _enemies.CreateEnemie();
     }
 }

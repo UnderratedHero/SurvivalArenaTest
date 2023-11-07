@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3134685873680288707}
   - component: {fileID: 2595638559609475638}
-  - component: {fileID: 1919330879}
   m_Layer: 7
   m_Name: MeleeWeaponModel
   m_TagString: Untagged
@@ -85,32 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1919330879
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217502061368142488}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2}
-  m_EdgeRadius: 0
 --- !u!1 &1879169679645552512
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +337,6 @@ MonoBehaviour:
   _attack: Fire1
   _switchWeapon: Jump
   _camera: {fileID: 0}
-  _currentWeapon: {fileID: 243390671}
 --- !u!114 &396934430851674656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,13 +465,13 @@ GameObject:
   m_Component:
   - component: {fileID: 8757600835863323723}
   - component: {fileID: 7781110997169000927}
-  - component: {fileID: 243390671}
   - component: {fileID: 243390667}
   - component: {fileID: 243390666}
   - component: {fileID: 243390665}
   - component: {fileID: 243390670}
   - component: {fileID: 1846226540}
-  m_Layer: 7
+  - component: {fileID: 834713188}
+  m_Layer: 9
   m_Name: Weapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,24 +509,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _input: {fileID: 4786940449074371162}
   _weaponStateMachine: {fileID: 243390667}
-  _currentWeapon: {fileID: 243390671}
---- !u!114 &243390671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8120565457148158125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55e542b156168b94fac56e09fad7be04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _meleeWeaponCollider: {fileID: 1919330879}
-  _meleeConfig: {fileID: 11400000, guid: 55b31cdd87e49f94aba7258034c2d014, type: 2}
-  _rangeConfig: {fileID: 11400000, guid: de5aea3e984a0564e8fd34365651151d, type: 2}
-  _timer: {fileID: 243390670}
-  _bulletPool: {fileID: 1846226540}
 --- !u!114 &243390667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +534,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentWeapon: {fileID: 1217502061368142488}
+  _meleeWeaponCollider: {fileID: 834713188}
+  _config: {fileID: 11400000, guid: 55b31cdd87e49f94aba7258034c2d014, type: 2}
+  _timer: {fileID: 243390670}
 --- !u!114 &243390665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,6 +550,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentWeapon: {fileID: 1879169679645552512}
+  _timer: {fileID: 243390670}
+  _config: {fileID: 11400000, guid: de5aea3e984a0564e8fd34365651151d, type: 2}
+  _bulletPool: {fileID: 1846226540}
 --- !u!114 &243390670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,3 +581,29 @@ MonoBehaviour:
   _isAutoExpand: 1
   _prefab: {fileID: 7087588361763783700, guid: f72676b4b3a416447b21f5a847d93222, type: 3}
   _spawnPoint: {fileID: 6185549361680192836}
+--- !u!61 &834713188
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120565457148158125}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private int _rangeWeaponLayerID;
+    [SerializeField] private int _meleeWeaponLayerID;
+    [SerializeField] private EnemyHealth _health;
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if(collision.gameObject.layer != _rangeWeaponLayerID)
+        {
+            return;
+        }
+        collision.gameObject.TryGetComponent<Bullet>(out var bullet);
+        _health.Decrease(bullet.Config.WeaponDamage);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if(collision.gameObject.layer != _meleeWeaponLayerID)
+        {
+            return;
+        }
+        collision.gameObject.TryGetComponent<MeleeWeaponState>(out var melee);
+        _health.Decrease(melee.Config.WeaponDamage);
     }
 }

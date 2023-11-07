@@ -10,7 +10,7 @@ public class WeaponStateMachine : MonoBehaviour
     private void Awake()
     {
         var activeStates = GetComponents<IWeaponState>();
-        foreach (var state in activeStates) 
+        foreach (var state in activeStates)
         {
             _states.Add(state.GetType(), state);
         }
@@ -35,7 +35,7 @@ public class WeaponStateMachine : MonoBehaviour
         return _states[type];
     }
 
-    public Type GetCurrentState()
+    public Type GetCurrentStateType()
     {
         return _states[_currentState.GetType()].GetType();
     }

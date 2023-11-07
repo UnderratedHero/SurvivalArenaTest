@@ -8,7 +8,6 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private string _attack;
     [SerializeField] private string _switchWeapon;
     [SerializeField] private Camera _camera;
-    [SerializeField] private CurrentWeapon _currentWeapon;
 
     public event Action OnAttacked;
     public event Action OnWeaponChanged;
@@ -18,7 +17,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetButtonDown(_attack) && !_currentWeapon.IsAttacked)
+        if(Input.GetButtonDown(_attack))
         {
             OnAttacked?.Invoke();
         }
