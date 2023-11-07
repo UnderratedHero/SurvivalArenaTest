@@ -11,4 +11,6 @@ public class EnemyConfig : ScriptableObject
     [field: SerializeField] public float SpawnTime { get; private set; } = 0f;
 
     [field: SerializeField] public float MoveSpeed { get; private set; } = 0f;
+
+    [field: SerializeField] public float Damage { get; private set; } = 0f;
 }

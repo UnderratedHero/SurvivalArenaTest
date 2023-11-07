@@ -137,6 +137,7 @@ MonoBehaviour:
   _rangeWeaponLayerID: 6
   _meleeWeaponLayerID: 9
   _health: {fileID: 1893917070261116424}
+  _config: {fileID: 11400000, guid: 7018ca3713398a14fb9efea64b70a940, type: 2}
 --- !u!114 &1893917070261116424
 MonoBehaviour:
   m_ObjectHideFlags: 0

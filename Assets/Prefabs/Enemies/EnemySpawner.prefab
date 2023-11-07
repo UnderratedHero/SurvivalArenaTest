@@ -50,6 +50,7 @@ MonoBehaviour:
   _timer: {fileID: 3098748543954858177}
   _enemies: {fileID: 7239732062807409139}
   _config: {fileID: 11400000, guid: 7018ca3713398a14fb9efea64b70a940, type: 2}
+  _layerNumber: 7
 --- !u!114 &3098748543954858177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,7 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolSise: 1
-  _isAutoExpand: 1
+  _isAutoExpand: 0
   _prefab: {fileID: 723573127512064472, guid: 41e425acdd75e9a46bfb15492432d0f1, type: 3}
 --- !u!58 &2842490851366091119
 CircleCollider2D:
@@ -143,6 +144,7 @@ MonoBehaviour:
   _timer: {fileID: 2415749913173843467}
   _enemies: {fileID: 4721366173514553651}
   _config: {fileID: 11400000, guid: 7018ca3713398a14fb9efea64b70a940, type: 2}
+  _layerNumber: 7
 --- !u!114 &2415749913173843467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolSise: 1
-  _isAutoExpand: 1
+  _isAutoExpand: 0
   _prefab: {fileID: 723573127512064472, guid: 41e425acdd75e9a46bfb15492432d0f1, type: 3}
 --- !u!58 &5347274782807353473
 CircleCollider2D:
@@ -236,6 +238,7 @@ MonoBehaviour:
   _timer: {fileID: 964806251320553869}
   _enemies: {fileID: 7281055022886118820}
   _config: {fileID: 11400000, guid: 7018ca3713398a14fb9efea64b70a940, type: 2}
+  _layerNumber: 7
 --- !u!114 &964806251320553869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,7 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolSise: 1
-  _isAutoExpand: 1
+  _isAutoExpand: 0
   _prefab: {fileID: 723573127512064472, guid: 41e425acdd75e9a46bfb15492432d0f1, type: 3}
 --- !u!58 &7138091605860782719
 CircleCollider2D:
@@ -329,6 +332,7 @@ MonoBehaviour:
   _timer: {fileID: 3407917579891739400}
   _enemies: {fileID: 7650336420716786908}
   _config: {fileID: 11400000, guid: 7018ca3713398a14fb9efea64b70a940, type: 2}
+  _layerNumber: 7
 --- !u!114 &3407917579891739400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolSise: 1
-  _isAutoExpand: 1
+  _isAutoExpand: 0
   _prefab: {fileID: 723573127512064472, guid: 41e425acdd75e9a46bfb15492432d0f1, type: 3}
 --- !u!58 &5449898386072706880
 CircleCollider2D:
@@ -422,6 +426,7 @@ MonoBehaviour:
   _timer: {fileID: 1997057689799937617}
   _enemies: {fileID: 8315567290304779191}
   _config: {fileID: 11400000, guid: 7018ca3713398a14fb9efea64b70a940, type: 2}
+  _layerNumber: 7
 --- !u!114 &1997057689799937617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,7 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolSise: 1
-  _isAutoExpand: 1
+  _isAutoExpand: 0
   _prefab: {fileID: 723573127512064472, guid: 41e425acdd75e9a46bfb15492432d0f1, type: 3}
 --- !u!58 &5412340952402344138
 CircleCollider2D:
@@ -554,6 +559,7 @@ MonoBehaviour:
   _timer: {fileID: 1239747955607864328}
   _enemies: {fileID: 4286639248393493818}
   _config: {fileID: 11400000, guid: 7018ca3713398a14fb9efea64b70a940, type: 2}
+  _layerNumber: 7
 --- !u!114 &1239747955607864328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,7 +585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolSise: 1
-  _isAutoExpand: 1
+  _isAutoExpand: 0
   _prefab: {fileID: 723573127512064472, guid: 41e425acdd75e9a46bfb15492432d0f1, type: 3}
 --- !u!58 &7347914811311307896
 CircleCollider2D:
@@ -647,6 +653,7 @@ MonoBehaviour:
   _timer: {fileID: 2089393782054853109}
   _enemies: {fileID: 4303115272168856022}
   _config: {fileID: 11400000, guid: 7018ca3713398a14fb9efea64b70a940, type: 2}
+  _layerNumber: 7
 --- !u!114 &2089393782054853109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,7 +679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolSise: 1
-  _isAutoExpand: 1
+  _isAutoExpand: 0
   _prefab: {fileID: 723573127512064472, guid: 41e425acdd75e9a46bfb15492432d0f1, type: 3}
 --- !u!58 &5337215900844749817
 CircleCollider2D:
@@ -740,6 +747,7 @@ MonoBehaviour:
   _timer: {fileID: 1659156974814225110}
   _enemies: {fileID: 5702641765689974737}
   _config: {fileID: 11400000, guid: 7018ca3713398a14fb9efea64b70a940, type: 2}
+  _layerNumber: 7
 --- !u!114 &1659156974814225110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,7 +773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolSise: 1
-  _isAutoExpand: 1
+  _isAutoExpand: 0
   _prefab: {fileID: 723573127512064472, guid: 41e425acdd75e9a46bfb15492432d0f1, type: 3}
 --- !u!58 &4525723024908491713
 CircleCollider2D:
