@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Range Weapon Config
   m_EditorClassIdentifier: 
   <WeaponDamage>k__BackingField: 1
-  <BulletLifeTime>k__BackingField: 0.5
-  <BulletSpeed>k__BackingField: 10
+  <BulletLifeTime>k__BackingField: 0.3
+  <BulletSpeed>k__BackingField: 15

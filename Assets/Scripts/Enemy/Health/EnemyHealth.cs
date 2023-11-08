@@ -5,7 +5,7 @@ public class EnemyHealth : MonoBehaviour, IHealth
 {
     [SerializeField] private EnemyConfig _config;
     
-    public event Action<float> OnDecrease;
+    public event Action OnDecrease;
 
     public bool IsDead { get; private set; }
     public float Current { get; private set; }
@@ -31,7 +31,7 @@ public class EnemyHealth : MonoBehaviour, IHealth
             IsDead = true;
         }
 
-        OnDecrease?.Invoke(_config.MinHealthPoints);
+        OnDecrease?.Invoke();
     }
 
     public void Increase(float value)
